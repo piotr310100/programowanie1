@@ -6,4 +6,6 @@ jobs:
         platform: [ubuntu-latest, windows-latest, macos-latest]
     runs-on: ${{ matrix.platform }}
     steps:
-      - run: echo hello world   
+      - uses: actions/checkout@v2
+      - run: g++ liczbaLosowa -o liczbaLosowa.cpp
+      - run: or i in {1..5}; do ./liczbaLosowa ; done
