@@ -1,0 +1,5 @@
+on: [push, pull_request]
+jobs:
+  main:
+    steps:
+      - run: echo hello world   
